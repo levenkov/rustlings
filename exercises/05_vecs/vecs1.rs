@@ -5,6 +5,12 @@ fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     // Use the vector macro.
     // let v = ???;
 
+    let mut v = Vec::new();
+
+    for i in a.iter() {
+        v.push(*i);
+    }
+
     (a, v)
 }
 
